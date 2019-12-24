@@ -1,0 +1,21 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TestForm</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<wicket:panel>
+		<form wicket:id="form">
+			<select wicket:id="dropDwonChoice">
+				<option value="en">English</option>
+				<option value="de">German</option>
+			</select> <br>
+			<p>
+				<wicket:message key="staticMessage" escape="true">Our Message</wicket:message>  : 
+				<wicket:message key="greetingMessage" wicket:id="label" >Welcome to US</wicket:message>
+			</p>
+		</form>
+	</wicket:panel>
+</body>
+</html>
